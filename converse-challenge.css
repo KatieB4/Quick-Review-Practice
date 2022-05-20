@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,10 +53,20 @@ body {
 
 .product-img {
   width: 250px;
+  float: left;
+  margin-right: 40px;
+}
+
+.section-product-description {
+  float: left;
+  width: 243px;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 .product-price {
   font-size: 24px;
+  float: left;
 }
 
 .product-promo {
@@ -63,9 +74,12 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
+  float: right;
+  margin-top: 8px;
 }
 
 .product-description {
+  clear: both;
   margin-bottom: 10px;
 }
 
@@ -112,11 +126,16 @@ body {
   background-color: #885214;
 }
 
+.section-product-details {
+  float: left;
+  width: 243px;
+  margin-top: 20px;
+}
+
 .product-details-title {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 20px;
 }
 
 .product-details-list {
