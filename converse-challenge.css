@@ -14,6 +14,9 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  column-gap: 40px;
 }
 
 .sale-tag {
@@ -49,11 +52,7 @@ body {
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 15px;
-}
-
-.product-content {
-  display: flex;
-  gap: 40px;
+  grid-column: 1/-1;
 }
 
 .product-img {
@@ -62,7 +61,6 @@ body {
 
 .section-product-description {
   margin-top: 20px;
-  flex: 1;
 }
 
 .price-group {
@@ -81,10 +79,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-}
-
-.product-description {
-  /* margin-bottom: 10px; */
 }
 
 .product-info:link,
@@ -135,7 +129,6 @@ body {
 
 .section-product-details {
   margin-top: 20px;
-  flex: 1;
 }
 
 .product-details-title {
@@ -162,6 +155,7 @@ body {
   cursor: pointer;
   padding: 15px;
   width: 100%;
+  grid-column: 1/-1;
 }
 
 .order-button:hover {
